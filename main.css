@@ -1,0 +1,132 @@
+/*
+  Coding from Life – Sketch 1: fixed layout
+
+  For sketch 1 you'll be positioning elements relative to an element with a fixed
+  width and height. For this sketch you can position elements by using pixel values.
+*/
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 1000px;
+  height: 600px;
+  background: #FFA07A;
+  margin: 100px auto;
+  position: relative;
+}
+  
+.pumpkintop {
+    position: absolute;
+    height: 60px;
+    width: 40px;
+    background: #F4A460;
+    border-radius: 30%;
+    right: 230px;
+    bottom: 430px;
+    z-index: 3;
+  }
+
+.pumpkin {
+	position: absolute;
+	  width: 450px;
+	  height: 350px;
+    background-color: #e06100;
+    background-image: url("https://www.transparenttextures.com/patterns/blu-stripes.png");
+	  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	  z-index: 3;
+    transform: skew(5deg);
+    bottom: 100px;
+    right: 20px;
+}
+
+
+.squash {
+	position: absolute;
+     width: 270px;
+     height: 200px;
+     background: rgb(246,208,9);
+     background: linear-gradient(54deg, rgba(246,208,9,1) 0%, rgba(253,183,29,1) 50%, rgba(252,176,69,1) 67%);
+     border-radius: 100%;
+     bottom: 40px;
+     right: 250px;
+     transform: skew(-30deg);
+     z-index: 4;
+    }
+
+
+.wall {
+  position: absolute
+    width: 24px;
+    height: 900px;
+    background: rgb(27,26,24);
+    background: linear-gradient(90deg, rgba(27,26,24,1) 0%, rgba(205,193,193,1) 71%, rgba(205,193,193,1) 99%);
+    top: 60px;
+		left: 10px;
+    z-index: 4;
+}
+
+ .lidtop {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: black;
+    border-radius: 50%;
+    left: 130px;
+    bottom: 370px;
+    z-index: 3;
+  }
+
+		.bowl {
+			position: absolute;
+		     width: 300px;
+		     height: 250px;
+		     background: rgb(27,26,24);
+         background: linear-gradient(90deg, rgba(27,26,24,1) 0%, rgba(27,26,24,1) 8%, rgba(124,12,12,1) 53%, rgba(43,13,13,1) 100%);
+		     border-radius: 45%;
+		     left: 10px;
+         bottom: 140px;
+         z-index: 2
+		    }
+
+		.lid {
+			position: absolute;
+			height: 80px;
+			width: 250px;
+			border-radius: 100%;
+			background: rgb(27,26,24);
+      background: linear-gradient(90deg, rgba(27,26,24,1) 0%, rgba(43,13,13,1) 46%, rgba(27,26,24,1) 100%);
+      left: 30px;
+      bottom: 310px;
+      z-index: 3;
+		}
+
+
+.vase {
+  position: absolute;
+	width: 250px;
+  background-color: white;
+  opacity: 0.8;
+	height: 550px;
+	left: 500px;
+  bottom: 250px;
+	z-index: 2;
+}
+
+
+.table {
+  width: 100%;
+  height:  300px;
+  background: #FFFFF0;
+  border: 2px solid white;
+  position: absolute;
+  transform: skew(10deg);
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+
+/* Your CSS goes here */
+
